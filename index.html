@@ -1,33 +1,323 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Academia Login</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="shortcut icon" href="imagens/icons/modIcone.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <title>Academy++</title>
+
+    <style>
+
+    html {
+        scroll-behavior: smooth;
+    }
+    body{
+        font-family: Merriweather;
+    }
+
+    .content{
+        min-height: 600vh;
+        padding: 20px;
+        background-color: #f0f0f0;
+        }
+
+        /*Começo borda flutuante parte de cima*/
+    .floating-menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #ccc;
+        color: white;
+        padding: 10px 0;
+        text-align: end;
+        z-index: 1000; /* Garante que o menu fique acima de outros conteúdos */
+        }
+
+    .floating-menu ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+    .floating-menu ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+    .floating-menu ul li a {
+            text-decoration: none;
+            color: rgb(255, 162, 120);
+            font-size: 1.2em;
+        }
+
+    .floating-menu ul li a:hover {
+            text-decoration: underline;
+        }
+        /*Fim borda flutuante parte de cima*/
+
+
+
+
+        /*Titulo*/
+    h1{
+            text-align: justify;
+            font-size: 4,5px;
+            margin-top: 50px;
+            color: rgb(255, 179, 92);
+
+        }
+         /*Titulo*/
+ 
+
+
+         /*Cabeçalho*/
+    header{
+            text-align: center;
+            font-size: 3.0em;
+            margin-top: 10px;
+            color: #ccc;
+        }
+        /*Cabeçalho*/
+
+
+
+        /*Imagens flutuantes parte final*/
+    .imagens-flutuantes{
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            align-items: center;
+
+        }
+
+    .imagens-flutuantes img{
+            max-width: 35vw;
+            max-height: 35vh;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease;
+
+
+        }
+
+    .imagens-flutuantes img:hover{
+           
+            transform: scale3d(1.0);
+        }
+        /*Imagens flutuantes parte final*/
+
+        /*Rodapé*/
+    footer{
+            background-color: #ccc;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+        }
+        /*Rodapé*/
+
+    
+        /*Tabela*/
+    table {
+      width: 85%;
+      height: 85px;
+      margin: auto;
+      border-collapse: collapse;
+    }
+    th, td {
+      border: 1px solid black;
+      padding: 8px;
+      text-align: left;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+    /*Tabela*/
+
+    
+    </style>
+
+
 </head>
-
 <body>
-    <div id="login">
-        <div class="container">
-            <h2>Bem vindo de volta!</h2>
-            <p>Para se conectar aperte em Login</p>
-            <button>Login</button>
-        </div>
+    <h1>ACADEMY++</h1>
+<!--Menu flutuante inicio-->
+    <div class="floating-menu">
+        <ul>
+            <li><a href="login.html">Matrícule-se Agora</a></li>
+            <li><a href="#Faleconosco">Fale Conosco</a></li>
+            <li><a href="#NossosPlanos">Planos</a></li>
+            <li><a href="#Modalidades">Nossas modalidades</a></li>
+        </ul>
+<!--Menu flutuante Final-->
     </div>
-    <div id="create">
-        <h2>Criar conta</h2>
-        <input class="cadastro" type="text" name="nome" placeholder="Nome"><br>
-        <input class="cadastro" type="email" name="email" placeholder="E-mail"><br>
-        <input class="cadastro" type="password" name="senha" placeholder="senha"><br>
-        <input class="botao_cadastro" type="submit" name="Cadastro" value="Cadastro"><br>
-    </div>
-</body>
 
+
+    
+<!--Cabeçalho inicio-->
+    <header class="cabeçalho">    
+        <h2>Seja bem-vindo</h2> 
+        <br>
+        <h4>A história da Academy++</h4>
+        <p>
+            <h5>Fundada em 2010, a Academy++ nasceu do sonho de três amigos apaixonados por musculação e tecnologia. Henrique, Gustavo e Kaique, todos desenvolvedores de software, sempre acreditaram que a prática de exercícios físicos era essencial para uma vida equilibrada e saudável. No entanto, eles sentiam falta de uma academia que combinasse inovação tecnológica com um ambiente acolhedor e motivador.
+
+            Foi assim que surgiu a ideia da Acamy++. Com um investimento inicial modesto e muita determinação, João e Maria abriram as portas da primeira unidade em São Paulo. Desde o início, a Academy++ se destacou por oferecer uma experiência única aos seus membros, integrando aplicativos de monitoramento de desempenho, aulas interativas e programas personalizados.
+
+            Ao longo dos anos, a Academy++ cresceu e se tornou uma referência no setor fitness. Com uma equipe de profissionais altamente qualificados e uma infraestrutura de ponta, a academia expandiu suas operações para várias cidades do Brasil. Hoje, a Academy++ continua a inovar, sempre buscando novas formas de ajudar seus membros a alcançar seus objetivos de saúde e bem-estar. </h5>
+        </p>
+        <br>
+        <img src="imagens/modLogoedit.png" alt="logo">
+        <br>
+        <br>
+        <br>
+    </header>
+<!--Cabeçalho Final-->
+
+<!--Conteudo inicio-->
+    <main class="Conteudo">
+        <!--Seção modalidades incio-->
+        <section class="Modalidades"id="Modalidades">
+            <p>
+                <h3>Temos como missão ajudar todos os nossos alunos a atingir os seus resultados, seja com qual modalidade escolher, confira:
+
+                </h3>
+            </p>
+                <!--Menu com modalidades (icones)-->
+                <nav class="menu-vertical">
+                <ul>
+                    <li><img src="imagens/icons/biceps.png" alt="Musculação 24h Icon"> Musculação 24h</li>
+                    <li><img src="imagens/icons/karate-dress_17351981.png" alt="Artes Marciais Icon"> Artes Marciais</li>
+                    <li><img src="imagens/icons/yoga_2043877.png" alt="Ginástica Icon"> Ginástica</li>
+                    <li><img src="imagens/icons/danca.png" alt="Danças Icon"> Danças</li>
+                    <li><img src="imagens/icons/bola-de-exercicio.png" alt="Fisioterapia Icon"> Fisioterapia</li>
+                    <li><img src="imagens/icons/dieta.png" alt="Nutricionista Icon"> Nutricionista</li>
+                    <li><img src="imagens/icons/check-up-medico.png" alt="Avaliação Física Icon"> Avaliação Física</li>
+                    <li><img src="imagens/icons/casal.png" alt="Idosos Icon"> Idosos</li>
+                    <li><img src="imagens/icons/funcional.png" alt="Treino Funcional Icon"> Treino Funcional</li>
+                    <li><img src="imagens/icons/bola-de-pilates.png" alt="Estúdio de Pilates Icon"> Estúdio de Pilates</li>
+                </ul>
+            </nav>
+        </section>
+        <!--Seção modalidades final-->
+
+
+        <!--Seção dos planos inicio-->
+        <section class="NossosPlanos" id="NossosPlanos">
+        <br>
+            <p>
+                <h3>Nossos planos:</h3>
+            </p>
+            <!--Tabela com valores dos planos-->
+            <div class="tabela">
+             <table>
+                <tr>
+                  <th></th>
+                  <th>Plano Plus++</th>
+                  <th>Plano Plus</th>
+                  <th>Plano Basic</th>
+                </tr>
+                <tr>
+                  <td>Acesso Ilimitado a +1.500 academias em todo o país</td>
+                  <td>✓</td>
+                  <td>x</td>
+                  <td>x</td>
+                </tr>
+                <tr>
+                  <td>Cadeira de massagem para treinar com mais conforto e bem-estar</td>
+                  <td>✓</td>
+                  <td>x</td>
+                  <td>x</td>
+                </tr>
+                <tr>
+                  <td>Academy GO (treinos online) no app</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                </tr>
+                <tr>
+                  <td>Área de musculação e aeróbicos</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                </tr>
+                <tr>
+                  <td>Academy Fitmais App</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                </tr>
+                <tr>
+                  <td><strong>A PARTIR DE:</strong></td>
+                  <td>R$ 129,90/mês</td>
+                  <td>R$ 89,90/mês</td>
+                  <td>R$ 119,90/mês</td>
+                </tr>
+                <tr>
+                  <td>*Consulte condições na academia.</td>
+                  <td>*12 meses de fidelidade</td>
+                  <td>*12 meses de fidelidade</td>
+                  <td>*12 meses de fidelidade</td>
+                </tr>
+              </table>
+            </section>
+            <!--Seção dos planos final-->
+
+              <br>
+              <p><h4>Por que escolher a Academy++?</h4></p>
+              <p>
+                <h5> Na Acamy++, acreditamos que cada jornada fitness é única. Nossa missão é proporcionar um ambiente acolhedor e motivador, onde você pode alcançar seus objetivos de saúde e bem-estar. Com uma equipe de profissionais dedicados e uma infraestrutura moderna, oferecemos uma variedade de aulas e programas personalizados para atender às suas necessidades. </h5>
+             </p>
+             <br>
+              
+        </div>
+
+        <br>
+        <!--Imagens flutuantes parte final-->
+        <div class="imagens-flutuantes">
+            <img src="imagens/img1projeto.jpg" alt="Foto meramente ilustrativa">
+            <img src="imagens/img2projeto.jpg" alt="Foto meramente ilustrativa">
+            <img src="imagens/img3projeto.jpg" alt="Foto meramente ilustrativa">
+        </div>
+    </main>
+<!--Conteudo final-->
+    <br>    
+
+<!--Rodapé-->
+    <footer>
+        <section class="Faleconosco" id="Faleconosco">
+            <div class="Faleconosco-text">
+                <h3>Fale Conosco</h3>
+                <p>WhatsApp</p>
+                <h5>11-0000-00000</h5>
+            </div>
+        </section>
+        
+
+    </footer>
+
+
+    
+
+
+
+
+ 
+
+        
+
+        
+
+
+
+ 
+</body>
 </html>
