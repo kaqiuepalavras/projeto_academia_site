@@ -9,10 +9,10 @@ body{
 .container{
     display: flex;
 }
-.content-second-content{
+.content-second-content, .content-first-content{
     display: flex;
 }
-.first-colum{
+.first-colum, .second-colum {
     margin: 23px;
     border: 1px solid black;
     border-radius: 5px;
@@ -23,16 +23,8 @@ body{
     align-items: center;
     display: flex;
     flex-direction: column;
+    transition: all 0.3s ease-in-out;
 }
-.second-colum{
-    margin: 23px;
-    border: 1px solid black;
-    border-radius: 5px;
-    padding: 15px;
-    height: 300px;
-    width: 300px;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
+.first-colum, .second-colum:hover {
+    transform: scale(1.1);
 }
