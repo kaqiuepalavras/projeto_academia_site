@@ -19,6 +19,7 @@
     }
     body{
         font-family: Merriweather;
+        background-color: black;
     }
 
     .content{
@@ -33,7 +34,7 @@
         top: 0;
         left: 0;
         width: 100%;
-        background-color: #ccc;
+        background-color: #19b0cb;
         color: white;
         padding: 10px 0;
         text-align: end;
@@ -61,27 +62,13 @@
             text-decoration: underline;
         }
         /*Fim borda flutuante parte de cima*/
-
-
-
-
-        /*Titulo*/
-    h1{
-            text-align: justify;
-            font-size: 4,5px;
-            margin-top: 50px;
-            color: rgb(255, 179, 92);
-
-        }
-         /*Titulo*/
  
-
 
          /*Cabeçalho*/
     header{
             text-align: center;
             font-size: 3.0em;
-            margin-top: 10px;
+            margin-top: 60px;
             color: #ccc;
         }
         /*Cabeçalho*/
@@ -116,11 +103,12 @@
 
         /*Rodapé*/
     footer{
-            background-color: #ccc;
+            background-color: #19b0cb;
             color: white;
             text-align: center;
             padding: 10px;
             position: relative;
+            display: block;
         }
         /*Rodapé*/
 
@@ -133,15 +121,15 @@
       border-collapse: collapse;
     }
     th, td {
-      border: 1px solid black;
+      border: 1px solid #ccc;
       padding: 8px;
       text-align: left;
     }
     th {
-      background-color: #f2f2f2;
+      background-color: #ccc;
     }
     /*Tabela*/
-    h2{
+    #titulo-cabeçalho{
         animation-duration: 3s;
         animation-name: slidein;
         animation-iteration-count:alternate;
@@ -156,16 +144,31 @@
             width: 100%;
         }
     }
+    main{
+        color: #CCC;
+    }
+    #titulo-cabeçalho{
+        margin-top: 3%;
+    }
+    .icons-footer{
+        display: inline;
+        justify-content: center;
+        align-items: center;
+    }
+    .icons-footer li {
+        margin-left: 12%;
+        
+    }
     </style>
 
 
 </head>
 <body>
-    <h1>ACADEMY++</h1>
+    
 <!--Menu flutuante inicio-->
     <div class="floating-menu">
         <ul>
-            <li><a href="login.html">Matrícule-se Agora</a></li>
+            <li><a href="login2.html">Matrícule-se Agora</a></li>
             <li><a href="#Faleconosco">Fale Conosco</a></li>
             <li><a href="#NossosPlanos">Planos</a></li>
             <li><a href="#Modalidades">Nossas modalidades</a></li>
@@ -177,9 +180,7 @@
     
 <!--Cabeçalho inicio-->
     <header class="cabeçalho">    
-        <h2>Seja bem-vindo</h2> 
-        <br>
-        <h4>A história da Academy++</h4>
+        <h1 id="titulo-cabeçalho">A história da Academy++</h1>
         <p>
             <h5>Fundada em 2010, a Academy++ nasceu do sonho de três amigos apaixonados por musculação e tecnologia. Henrique, Gustavo e Kaique, todos desenvolvedores de software, sempre acreditaram que a prática de exercícios físicos era essencial para uma vida equilibrada e saudável. No entanto, eles sentiam falta de uma academia que combinasse inovação tecnológica com um ambiente acolhedor e motivador.
 
@@ -308,29 +309,17 @@
     <footer>
         <section class="Faleconosco" id="Faleconosco">
             <div class="Faleconosco-text">
-                <h3>Fale Conosco</h3>
-                <p>WhatsApp</p>
-                <h5>11-0000-00000</h5>
-            </div>
+                <h2>Fale Conosco</h2>
+            
+             
+                <li><img src="imagens/icons/GitHub.jpeg" alt="icon Github"> Github</li>
+                <li><img src="imagens/icons/Linkedin.jpeg" alt="icon Linkedin"> Linkedin</li>
+                <li><img src="imagens/icons/WhatsApp.jpeg" alt="icon WhatsApp"> WhatsApp</li>
+            </div class="icons-footer">
         </section>
         
 
     </footer>
-
-
-    
-
-
-
-
- 
-
-        
-
-        
-
-
-
  
 </body>
 </html>
