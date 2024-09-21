@@ -1,0 +1,69 @@
+body {
+    font-family: Merriweather;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6%;
+}
+
+#fundo-cadastro {
+    position: absolute;
+    z-index: -1;
+    opacity: 100%;
+    top: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+}
+
+#create {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #b7bec5;
+    height: 550px;
+    width: 550px;
+    border-radius: 4%;
+}
+
+#criar-conta {
+    font-size: xx-large;
+    color: #eb8e58;
+
+}
+
+#logo-fundo {
+
+    height: 80%;
+    width: auto;
+    margin-top: 4%;
+    position: absolute;
+    z-index: 0;
+    opacity: 25%;
+    top: 0;
+    left: 30%;
+}
+
+.botao_cadastro {
+    color: white;
+    background-color: #eb8e58;
+    height: 50px;
+    width: 100px;
+    border-radius: 1.5rem;
+}
+
+.cadastro {
+    width: 30rem;
+    border: none;
+    padding: 1rem;
+    border-radius: 1.5rem;
+    margin-bottom: 1rem;
+    color: #45474B;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+.cadastro:hover {
+    background-color: #f0e8e8;
+}
