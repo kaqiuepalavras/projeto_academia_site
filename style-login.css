@@ -3,7 +3,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 50px;
+    margin-top: 10px;
     font-size: 16px;
     padding: 10px;
     flex-direction: column;
@@ -11,6 +11,8 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat:no-repeat ;
+    height: 100vh;
+    overflow: hidden;
 }
 #create {
     display: flex;
@@ -44,6 +46,10 @@ body {
     width: 100px;
     border-radius: 1.5rem;
     cursor: pointer;
+}
+.botao_cadastro:hover{
+    background-color: #e88348;
+    box-shadow: 1px 1px #000000;
 }
 .cadastro {
     width: 30rem;
