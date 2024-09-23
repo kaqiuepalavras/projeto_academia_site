@@ -3,417 +3,187 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link 
+        rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="shortcut icon" href="imagens/icons/modIcone.png" type="image/x-icon">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
         rel="stylesheet">
     <title>Health Gym Klub</title>
-
-    <style>
-
-    html {
-        scroll-behavior: smooth;
-    }
-    body{
-        font-family: Merriweather;
-        background-color: #b7bec5;
-    }
-
-    .content{
-        min-height: 600vh;
-        padding: 20px;
-        background-color: black;
-        }
-
-        /*Começo borda flutuante parte de cima*/
-    .floating-menu {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        background-color: #14233b;
-        color: #36a0e0;
-        padding: 10px 0;
-        text-align: end;
-        z-index: 1000; /* Garante que o menu fique acima de outros conteúdos */
-        }
-
-    .floating-menu ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-        }
-
-    .floating-menu ul li {
-            display: inline;
-            margin: 0 15px;
-        }
-
-    .floating-menu ul li a {
-            text-decoration: none;
-            color: #e87433;
-            font-size: 1.2em;
-        }
-
-    .floating-menu ul li a:hover {
-            text-decoration: underline;
-        }
-        /*Fim borda flutuante parte de cima*/
- 
-
-         /*Cabeçalho*/
-    header{
-            display: flex;
-            text-align: center;
-            font-size: 3.0em;
-            margin-top: 60px;
-            color: white;
-        }
-        /*Cabeçalho*/
-
-
-
-        /*Imagens flutuantes parte final*/
-    .imagens-flutuantes{
-            display: flex;
-            justify-content: center;
-            gap: 25px;
-            align-items: center;
-
-        }
-
-    .imagens-flutuantes img{
-            max-width: 35vw;
-            max-height: 35vh;
-            height: auto;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-            transition: transform 0.3s ease;
-
-
-        }
-
-    .imagens-flutuantes img:hover{
-           
-            transform: scale3d(1.0);
-        }
-        /*Imagens flutuantes parte final*/
-
-        /*Rodapé*/
-    footer{
-            background-color: #14233b;
-            color: white;
-            text-align: center;
-            padding: 10px;
-            position: relative;
-            display: block;
-        }
-        /*Rodapé*/
-
-    
-        /*Tabela*/
-    table {
-      width: 85%;
-      height: 85px;
-      margin: auto;
-      border-collapse: collapse;
-    }
-    th, td {
-      border: 1px solid #14233b;
-      padding: 8px;
-      text-align: left;
-    }
-    th {
-      background-color: #14233b;
-    }
-    /*Tabela*/
-    #titulo-cabeçalho{
-        animation-duration: 3s;
-        animation-name: slidein;
-        animation-iteration-count:alternate;
-    }
-    @keyframes slidein {
-        from {
-            margin-left: 100%;
-            width: 300%;
-        }
-        to {
-            margin-left: 0%;
-            width: 100%;
-        }
-    }
-    main{
-        color: white;
-    }
-    #titulo-cabeçalho{
-        margin-top: 3%;
-    }
-    .icons-footer{
-        display: inline;
-        justify-content: center;
-        align-items: center;
-    }
-    .icons-footer li {
-        margin-left: 12%;
-        
-    }
-    .apresentar{
-        min-width: 50%;
-        align-items: flex-start;
-        
-    }
-
-    .apresentar2{
-        min-width: 50%;
-        justify-content: center;
-        text-align: center;    
-        
-    }
-    .imgS {
-    position: relative;
-    overflow: hidden; /* Adicionado para esconder partes da imagem que saem do contêiner */
-    }
-
-    .imgS img {
-    width: 100%;
-    max-width: 470px;
-    transition: transform 1.0s ease-in-out; /* Transição suave */
-    }
-
-    .imgS img:hover {
-    transform: scale(1.1); 
-    }
-    .texto-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    margin-left: 20px; 
-    max-width: 500px; 
-}
-.apresentar2 #Somos{
-    
-    color: rgb(253, 254, 255);
-    
-}
-.texto-container h1 #nomedaacademia{
-    color: #e87433;
-    text-align: center;
-    
-}
-
-
-.texto-container h1 {
-   color: orange;
-} 
-
-
-button {
-   background-color: orange;
-   color: white;
-   border: none;
-   padding: 10px 20px;
-   cursor: pointer;
-}
-    </style>
-
-
+    <link rel="stylesheet" href="style-index.css">
 </head>
 <body>
-    
-<!--Menu flutuante inicio-->
     <div class="floating-menu">
         <ul>
-            <li><a href="login2.html">Matrícule-se Agora</a></li>
-            <li><a href="#Faleconosco">Fale Conosco</a></li>
-            <li><a href="#NossosPlanos">Planos</a></li>
             <li><a href="#Modalidades">Nossas modalidades</a></li>
+            <li><a href="#NossosPlanos">Planos</a></li>
+            <li><a href="login.html">Matrícule-se Agora</a></li>
+            <li><a href="#Faleconosco">Fale Conosco</a></li>
         </ul>
-<!--Menu flutuante Final-->
     </div>
-
-
-    
-<!--Cabeçalho inicio-->
     <header class="cabeçalho">
         <div class="apresentar">
-            <div class="imgS"> <!-- Mudança do id para class -->
-                <img src="imagens/img-apresentacao.jpeg" alt="Somos a ghk">
+            <div class="imgS">
+                <img src="assets/imagens/img-apresentacao.png" alt="Somos a ghk">
             </div>
         </div>
-
         <div class="apresentar2">
-            <h1 id="Somos">Quem somos nós?</h1>
             <div class="texto-container">
-                <p><h5>A Health Gym Klub nasceu do sonho!Nós acreditamos que a prática de exercícios físicos é fundamental para uma vida equilibrada e saudável</p></h5>
-                <p><h5>Sendo altamente inovadora, a HGK tem todos os ingredientes para expandir exponencialmente e trazer qualidade de vida aos seus clientes.</p></h5>
-            
+                <h1 id="Somos">Quem somos nós?</h1>
+                <p>
+                <h5>A Health Gym Klub nasceu de um sonho! Nós acreditamos que a prática de exercícios físicos é
+                fundamental para uma vida equilibrada e saudável</p>
+                </h5>
+                <p>
+                <h5>Sendo altamente inovadora, a HGK tem todos os ingredientes para expandir exponencialmente e trazer
+                    qualidade de vida aos seus clientes.</p>
+                </h5>
+                <button><a href="#historia">Saiba mais </a></button>
             </div>
         </div>
-        <button>Saiba mais</button>
-        
-
-        
-
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>    
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <h2 id="titulo-cabeçalho">A história da HGK</h2>
-        <p>
-            <h5>Fundada em 2010, a Health Gym Klub nasceu do sonho de três amigos apaixonados por musculação e tecnologia. Henrique, Gustavo e Kaique, todos desenvolvedores de software, sempre acreditaram que a prática de exercícios físicos era essencial para uma vida equilibrada e saudável. No entanto, eles sentiam falta de uma academia que combinasse inovação tecnológica com um ambiente acolhedor e motivador.
-
-            Foi assim que surgiu a ideia da HGK. Com um investimento inicial modesto e muita determinação, João e Maria abriram as portas da primeira unidade em São Paulo. Desde o início, a HGK se destacou por oferecer uma experiência única aos seus membros, integrando aplicativos de monitoramento de desempenho, aulas interativas e programas personalizados.
-
-            Ao longo dos anos, a HGK cresceu e se tornou uma referência no setor fitness. Com uma equipe de profissionais altamente qualificados e uma infraestrutura de ponta, a academia expandiu suas operações para várias cidades do Brasil. Hoje, a HGK continua a inovar, sempre buscando novas formas de ajudar seus membros a alcançar seus objetivos de saúde e bem-estar. </h5>
-        </p>
-
-        <br>
     </header>
-<!--Cabeçalho Final-->
-
-<!--Conteudo inicio-->
+    <div class="historia" id="historia">
+        <h2 id="titulo-historia">A história da HGK</h2>
+        <br>
+        <p>
+            <h5>
+            Fundada em 2010, a Health Gym Klub nasceu do sonho de três amigos    apaixonados por musculação e tecnologia.
+            Henrique, Gustavo e Kaique, todos desenvolvedores de software, sempre acreditaram que a prática de
+            exercícios físicos era essencial para uma vida equilibrada e saudável. No entanto, eles sentiam falta de uma
+            academia que combinasse inovação tecnológica com um ambiente acolhedor e motivador.
+            Foi assim que surgiu a ideia da HGK. Com um investimento inicial modesto e muita determinação, João e Maria
+            abriram as portas da primeira unidade em São Paulo. Desde o início, a HGK se destacou por oferecer uma
+            experiência única aos seus membros, integrando aplicativos de monitoramento de desempenho, aulas interativas
+            e programas personalizados.
+            Ao longo dos anos, a HGK cresceu e se tornou uma referência no setor fitness. Com uma equipe de
+            profissionais altamente qualificados e uma infraestrutura de ponta, a academia expandiu suas operações para
+            várias cidades do Brasil. Hoje, a HGK continua a inovar, sempre buscando novas formas de ajudar seus membros
+            a alcançar seus objetivos de saúde e bem-estar.
+        </h5>
+        </p>
+    </div>
+    <br>
     <main class="Conteudo">
-        <!--Seção modalidades incio-->
-        <section class="Modalidades"id="Modalidades">
+        <section class="Modalidades" id="Modalidades">
             <p>
-                <h3>Temos como missão ajudar todos os nossos alunos a atingir os seus resultados, seja com qual modalidade escolher, confira:
-
-                </h3>
+            <h2>Confira nossas modalidades:</h2>
             </p>
-                <!--Menu com modalidades (icones)-->
-                <nav class="menu-vertical">
-                <ul>
-                    <li><img src="imagens/icons/biceps.png" alt="Musculação 24h Icon"> Musculação 24h</li>
-                    <li><img src="imagens/icons/karate-dress_17351981.png" alt="Artes Marciais Icon"> Artes Marciais</li>
-                    <li><img src="imagens/icons/yoga_2043877.png" alt="Ginástica Icon"> Ginástica</li>
-                    <li><img src="imagens/icons/danca.png" alt="Danças Icon"> Danças</li>
-                    <li><img src="imagens/icons/bola-de-exercicio.png" alt="Fisioterapia Icon"> Fisioterapia</li>
-                    <li><img src="imagens/icons/dieta.png" alt="Nutricionista Icon"> Nutricionista</li>
-                    <li><img src="imagens/icons/check-up-medico.png" alt="Avaliação Física Icon"> Avaliação Física</li>
-                    <li><img src="imagens/icons/casal.png" alt="Idosos Icon"> Idosos</li>
-                    <li><img src="imagens/icons/funcional.png" alt="Treino Funcional Icon"> Treino Funcional</li>
-                    <li><img src="imagens/icons/bola-de-pilates.png" alt="Estúdio de Pilates Icon"> Estúdio de Pilates</li>
+            <img id="logo2academia" src="assets/imagens/logo2academia.png" alt="Logo principal">
+            <nav class="menu-vertical">
+                <ul id="first-list">
+                    <li><img src="assets/imagens/icons/biceps.png" alt="Musculação 24h Icon"> Musculação 24h</li>
+                    <li><img src="assets/imagens/icons/karate-dress_17351981.png" alt="Artes Marciais Icon"> Artes Marciais
+                    </li>
+                    <li><img src="assets/imagens/icons/yoga_2043877.png" alt="Ginástica Icon"> Ginástica</li>
+                    <li><img src="assets/imagens/icons/danca.png" alt="Danças Icon"> Danças</li>
+                    <li><img src="assets/imagens/icons/bola-de-exercicio.png" alt="Fisioterapia Icon"> Fisioterapia</li>
+                </ul>
+                <ul id="second-list">
+                    <li><img src="assets/imagens/icons/dieta.png" alt="Nutricionista Icon"> Nutricionista</li>
+                    <li><img src="assets/imagens/icons/check-up-medico.png" alt="Avaliação Física Icon"> Avaliação Física</li>
+                    <li><img src="assets/imagens/icons/casal.png" alt="Idosos Icon"> Idosos</li>
+                    <li><img src="assets/imagens/icons/funcional.png" alt="Treino Funcional Icon"> Treino Funcional</li>
+                    <li><img src="assets/imagens/icons/bola-de-pilates.png" alt="Estúdio de Pilates Icon"> Estúdio de Pilates
+                    </li>
                 </ul>
             </nav>
         </section>
-        <!--Seção modalidades final-->
-
-
-        <!--Seção dos planos inicio-->
         <section class="NossosPlanos" id="NossosPlanos">
-        <br>
+            <br>
+            <br>
+            <br>
             <p>
-                <h3>Nossos planos:</h3>
+            <h3>Nossos planos</h3>
+            <br>
             </p>
-            <!--Tabela com valores dos planos-->
             <div class="tabela">
-             <table>
-                <tr>
-                  <th></th>
-                  <th>Plano Plus++</th>
-                  <th>Plano Plus</th>
-                  <th>Plano Basic</th>
-                </tr>
-                <tr>
-                  <td>Acesso Ilimitado a +1.500 academias em todo o país</td>
-                  <td>✓</td>
-                  <td>x</td>
-                  <td>x</td>
-                </tr>
-                <tr>
-                  <td>Cadeira de massagem para treinar com mais conforto e bem-estar</td>
-                  <td>✓</td>
-                  <td>x</td>
-                  <td>x</td>
-                </tr>
-                <tr>
-                  <td>Academy GO (treinos online) no app</td>
-                  <td>✓</td>
-                  <td>✓</td>
-                  <td>✓</td>
-                </tr>
-                <tr>
-                  <td>Área de musculação e aeróbicos</td>
-                  <td>✓</td>
-                  <td>✓</td>
-                  <td>✓</td>
-                </tr>
-                <tr>
-                  <td>Academy Fitmais App</td>
-                  <td>✓</td>
-                  <td>✓</td>
-                  <td>✓</td>
-                </tr>
-                <tr>
-                  <td><strong>A PARTIR DE:</strong></td>
-                  <td>R$ 129,90/mês</td>
-                  <td>R$ 89,90/mês</td>
-                  <td>R$ 119,90/mês</td>
-                </tr>
-                <tr>
-                  <td>*Consulte condições na academia.</td>
-                  <td>*12 meses de fidelidade</td>
-                  <td>*12 meses de fidelidade</td>
-                  <td>*12 meses de fidelidade</td>
-                </tr>
-              </table>
-            </section>
-            <!--Seção dos planos final-->
-
-              <br>
-              <p><h4>Por que escolher a Academy++?</h4></p>
-              <p>
-                <h5> Na Health Gym Klub, acreditamos que cada jornada fitness é única. Nossa missão é proporcionar um ambiente acolhedor e motivador, onde você pode alcançar seus objetivos de saúde e bem-estar. Com uma equipe de profissionais dedicados e uma infraestrutura moderna, oferecemos uma variedade de aulas e programas personalizados para atender às suas necessidades. </h5>
-             </p>
-             <br>
-              
-        </div>
-
+                <table>
+                    <tr>
+                        <th></th>
+                        <th>Plano Plus++</th>
+                        <th>Plano Plus</th>
+                        <th>Plano Basic</th>
+                    </tr>
+                    <tr>
+                        <td>Acesso Ilimitado a +1.500 academias em todo o país</td>
+                        <td>✓</td>
+                        <td>x</td>
+                        <td>x</td>
+                    </tr>
+                    <tr>
+                        <td>Cadeira de massagem para treinar com mais conforto e bem-estar</td>
+                        <td>✓</td>
+                        <td>x</td>
+                        <td>x</td>
+                    </tr>
+                    <tr>
+                        <td>Academy GO (treinos online) no app</td>
+                        <td>✓</td>
+                        <td>✓</td>
+                        <td>✓</td>
+                    </tr>
+                    <tr>
+                        <td>Área de musculação e aeróbicos</td>
+                        <td>✓</td>
+                        <td>✓</td>
+                        <td>✓</td>
+                    </tr>
+                    <tr>
+                        <td>Academy Fitmais App</td>
+                        <td>✓</td>
+                        <td>✓</td>
+                        <td>✓</td>
+                    </tr>
+                    <tr>
+                        <td><strong>A PARTIR DE:</strong></td>
+                        <td>R$ 129,90/mês</td>
+                        <td>R$ 89,90/mês</td>
+                        <td>R$ 119,90/mês</td>
+                    </tr>
+                    <tr>
+                        <td>*Consulte condições na academia.</td>
+                        <td>*12 meses de fidelidade</td>
+                        <td>*12 meses de fidelidade</td>
+                        <td>*12 meses de fidelidade</td>
+                    </tr>
+                </table>
+        </section>
         <br>
-        <!--Imagens flutuantes parte final-->
-        <div class="imagens-flutuantes">
-            <img src="imagens/img1projeto.jpg" alt="Foto meramente ilustrativa">
-            <img src="imagens/img2projeto.jpg" alt="Foto meramente ilustrativa">
-            <img src="imagens/img3projeto.jpg" alt="Foto meramente ilustrativa">
-        </div>
+        <p>
+        <h4 id="secaofinal">Por que escolher a HGK?</h4>
+        </p>
+        <br>
+        <p>
+        <h5 id="texto-secaofinal">
+            Na Health Gym Klub, acreditamos que cada jornada fitness é única. Nossa missão é
+            proporcionar um ambiente acolhedor e motivador, onde você pode alcançar seus objetivos de saúde e bem-estar.
+            Com uma equipe de profissionais dedicados e uma infraestrutura moderna, oferecemos uma variedade de aulas e
+            programas personalizados para atender às suas necessidades.
+        </h5>
+        </p>
+        <br>
     </main>
-<!--Conteudo final-->
-    <br>    
-
-<!--Rodapé-->
+    <div class="imagens-flutuantes">
+        <img src="assets/imagens/img1projeto.jpg" alt="Foto meramente ilustrativa">
+        <img src="assets/imagens/img2projeto.jpg" alt="Foto meramente ilustrativa ">
+        <img src="assets/imagens/img3projeto.jpg" alt="Foto meramente ilustrativa">
+    </div>
+    <br>
+    <br>
     <footer>
         <section class="Faleconosco" id="Faleconosco">
-            <div class="Faleconosco-text">
-                <h2>Fale Conosco</h2>
-            
-             
-                <li><img src="imagens/icons/GitHub.jpeg" alt="icon Github"> Github</li>
-                <li><img src="imagens/icons/Linkedin.jpeg" alt="icon Linkedin"> Linkedin</li>
-                <li><img src="imagens/icons/WhatsApp.jpeg" alt="icon WhatsApp"> WhatsApp</li>
-            </div class="icons-footer">
+            <h2>Fale Conosco</h2>
+            <br>
+            <div class="icons-footer">
+                <ul>
+                    <li><img src="assets/imagens/icons/github.png" alt="icon Github"><a
+                            href="https://github.com/kaqiuepalavras/projeto_academia_site.git"> Github</a></li>
+                    <li><img src="assets/imagens/icons/Linkedin.jpeg" alt="icon Linkedin"><a
+                            href="https://www.linkedin.com/">Linkedin</a></li>
+                </ul>
+            </div>
         </section>
-        
-
     </footer>
- 
 </body>
 </html>
