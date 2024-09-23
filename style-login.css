@@ -5,7 +5,6 @@ body {
     align-items: center;
     margin-top: 6%;
 }
-
 #fundo-cadastro {
     position: absolute;
     z-index: -1;
@@ -15,7 +14,6 @@ body {
     height: 100%;
     width: 100%;
 }
-
 #create {
     display: flex;
     flex-direction: column;
@@ -26,13 +24,11 @@ body {
     width: 550px;
     border-radius: 4%;
 }
-
 #criar-conta {
     font-size: xx-large;
     color: #eb8e58;
 
 }
-
 #logo-fundo {
 
     height: 80%;
@@ -44,7 +40,6 @@ body {
     top: 0;
     left: 30%;
 }
-
 .botao_cadastro {
     color: white;
     background-color: #eb8e58;
@@ -52,7 +47,6 @@ body {
     width: 100px;
     border-radius: 1.5rem;
 }
-
 .cadastro {
     width: 30rem;
     border: none;
@@ -63,7 +57,6 @@ body {
     font-size: 1rem;
     box-sizing: border-box;
 }
-
 .cadastro:hover {
     background-color: #f0e8e8;
 }
