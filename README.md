@@ -30,6 +30,20 @@ As modalidades e planos da academia são o foco de requisição dos usuários. E
 
 Por fim, informações adicionais e subtítulos do projeto como países fundadores, dados de contato e outras informações.
 
+## Configuração do Banco de Dados
+
+Para o funcionamento adequado da plataforma, é necessário configurar o banco de dados. As instruções a seguir facilitam a criação do banco de dados e das tabelas necessárias:
+
+### 1. Criação Automática
+
+Se você deseja uma forma automatizada de criar o banco e as tabelas, simplesmente execute o arquivo `setup_database.php` acessando via seu navegador.
+
+Isso criará o banco de dados e as tabelas necessárias automaticamente.
+
+### 2. Criação Manual
+
+Se preferir criar manualmente, você pode o seu gerenciador de banco de dados como phpMyAdmin e copiar as configurações que estão em `setup_database.php`. Isso configurará o banco de dados e a tabela de usuários conforme necessário.
+
 ## Casos de uso: Saúde e Tecnologia – integração com dispositivos móveis
 
 Por ser desempenhada por meio de um design responsivo, essa estrutura oferece aos membros da academia a oportunidade de acessar o portal e seus recursos por meio de seus dispositivos móveis, o que significa acesso constante à saúde e à evolução das suas informações em movimento.
@@ -37,4 +51,3 @@ Por ser desempenhada por meio de um design responsivo, essa estrutura oferece ao
 ## Conclusão
 
 Em suma, o projeto da Health Gym Klub não é apenas um site; é uma oportunidade de as pessoas se envolverem em um estilo de vida mais saudável e combinarem a preocupação com a saúde com uma ferramenta excepcional por meio da tecnologia para alcançar o progresso e o sucesso pessoal. Portanto, explore o código, tome-o para si e faça os ajustes necessários para demonstrar como a união com a saúde pode ser alcançada!
-
